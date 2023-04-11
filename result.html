@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Beni Bhola </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .P_head {
+                text-align: center;
+				font-weight: 700;
+				font-size: 1.5rem;
+				margin-bottom: 0rem;
+        }
+
+        .first_heading {
+            padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+            color: #ff0 !important;
+            background-color: #0e8598 !important;
+        }
+
+        .div_navbar {
+                font-weight: 600;
+				font-size: 1rem;
+				margin-top: 0.5rem;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+		.h_register_head{
+			margin-top: 0.5rem;
+			text-align: center;
+			color: #212529;
+			background-color: #7991a9;
+			padding: 0.4rem;
+		}
+
+        .back_image_col {
+            margin-top: 15px;
+            background-color: #e9ecef;
+        }
+
+        .principle_message {
+            background-color: #e9ecef;
+            margin-top: 2rem;
+        }
+
+        .bg-footer {
+            color: black;
+			background-color: #035f6d !important;
+        }
+		.h3_teacher_team{
+		    background-color: #117686;
+			color: #f0f5f9;
+			text-align: center;
+			padding: 1rem;
+			margin-top: 0.5rem;
+			}
+			p{
+				font-size: 1rem;
+				font-weight: 500;
+				margin-top: 0;
+				margin-bottom: 0rem;
+			}
+			.h2_student_result{
+			    background-color: #169032;
+			padding: 1rem;
+			margin-top: 0.5rem;
+			text-align: center;
+			}
+			.form_result{
+				margin-top: 2rem;
+			}
+			th {
+		  border: 1px solid black;
+		} 
+		.vertical {
+					writing-mode: vertical-rl;
+				}
+				
+
+		table { border-collapse: collapse; }
+		tr { border: none; }
+		td {
+		  border-right: solid 1px black; 
+		  border-left: solid 1px black;
+		}
+    </style>
+</head>
+
+<body style="background-color: #dae0e5;">
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-2">
+                <img src="img/school-logo.png" class="rounded" style="width:190px; height: 90px;" alt="School Logo">
+            </div>
+            <div class="col-md-10 first_heading">
+                <p class="P_head">SHREE BENI BHOLA SECONDARY SCHOOL</p>
+                <p class="P_head">Godaita-8,Sarlahi,Nepal
+                    (Estd.2004, Computer Engineering.2073)
+                </p>
+            </div>
+        </div>
+
+        <!-- Start of Navbar -->
+        <nav class="navbar navbar-expand-lg div_navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Computer Engineering</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="teacher-team.html">Teacher Team</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Result</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Download</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+		
+		<h2 class="h2_student_result">View the Student Result:</h2>
+		<form class="form-inline form_result" action="/action_page.php">
+		  <div class="form-group">
+			<label for="email">Student ID:</label>
+			<input type="number" class="form-control" placeholder="Enter Student Id" id="email">
+		  </div>
+		  <div class="form-group">
+			<label for="pwd">Date of Birth:</label>
+			<input type="date" class="form-control" placeholder="" id="pwd">
+		  </div>
+
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		<table class="table table-hover">
+		<thead>
+		  <tr>
+			<td>Symbol No.</td>
+			<td>1001</td>
+			<td>Student Name:</td>
+			<td>Ramesh Kumar</td>
+		  </tr>
+		  	<tr>
+			<td>Class</td>
+			<td>ten</td>
+			<td>Date Of Birth</td>
+			<td>05-06-2000</td>
+		  </tr>
+		</thead>
+		</table>
+		
+	<!--	<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>S.N.</th>
+        <th>Subjects</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>English</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Nepali</td>
+        <td>60<td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Science</td>
+        <td>70</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+	<h1>Marksheet Table</h1>
+
+<table width="70%">
+  <tr>
+    <th rowspan="2"><div class="vertical">SERIAL NUMBER</div></th>
+    <th rowspan="2">SUBJECTS</th>
+    <th rowspan="2"><div class="vertical">CREDIT HOUR</div></th>
+    <th colspan="2">OBTAINED GRADE</th>
+    <th rowspan="2">FINAL GRADE</th>
+    <th rowspan="2">GRADE POINT</th>
+    <th rowspan="2">REMARKS</th>
+  </tr>
+  <tr>
+      <th>TH</th>
+      <th>PR</th>
+  </tr>
+  <tr>
+      <td>01</td>
+      <td>English</td>
+      <td>4</td>
+      <td>D+</td>
+      <td>A+</td>
+      <td>C</td>
+      <td>2.9</td>
+      <td></td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Nepali</td>
+    <td>4</td>
+    <td>D+</td>
+    <td>A+</td>
+    <td>C</td>
+    <td>2.9</td>
+    <td></td>
+</tr>
+<tr>
+    <td>03</td>
+    <td>Math</td>
+    <td>4</td>
+    <td>D+</td>
+    <td>A+</td>
+    <td>C</td>
+    <td>2.9</td>
+    <td></td>
+</tr>
+<tr>
+    <th colspan="8">GradeSheet</th>
+</tr>
+
+</table>	
+	<div class="bg-footer" style="margin-top: 15px;">
+            <div class="container p-3 text-center">
+                <span class="font-weight-bold text-uppercase"> SHREE BENI BHOLA SECONDARY SCHOOL
+                    Godaita-8,Sarlahi,Nepal (Estd.2004, Computer Engineering.2073) </span> <br>
+                <i class="fas fa-phone"></i> +977 (25) 523308,
+                <i class="fas fa-fax"></i> +977 (25) 525503,
+                <i class="fas fa-envelope"></i> benibhola@rediff.com,
+                <i class="fas fa-globe"></i> shreebenibhola.org <br>
+                <span class="font-weight-lighter"> © 2021 Beni Bhola model secondary School, Nepal All Rights Reserved.
+                    <p></p>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

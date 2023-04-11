@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Beni Bhola </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .P_head {
+                text-align: center;
+				font-weight: 700;
+				font-size: 1.5rem;
+				margin-bottom: 0rem;
+        }
+
+        .first_heading {
+            padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+            color: #ff0 !important;
+            background-color: #0e8598 !important;
+        }
+
+        .div_navbar {
+                font-weight: 600;
+				font-size: 1rem;
+				margin-top: 0.5rem;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+		.h_register_head{
+			margin-top: 0.5rem;
+			text-align: center;
+			color: #212529;
+			background-color: #7991a9;
+			padding: 0.4rem;
+		}
+		.h3_teacher_team{
+		    background-color: #117686;
+			color: #f0f5f9;
+			text-align: center;
+			padding: 1rem;
+			margin-top: 0.5rem;
+			}
+
+        .back_image_col {
+            margin-top: 15px;
+            background-color: #e9ecef;
+        }
+
+        .principle_message {
+            background-color: #e9ecef;
+            margin-top: 2rem;
+        }
+
+        .bg-footer {
+            color: black;
+			background-color: #035f6d !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: #dae0e5;">
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-2">
+                <img src="img/school-logo.png" class="rounded" style="width:190px; height: 90px;" alt="School Logo">
+            </div>
+            <div class="col-md-10 first_heading">
+                <p class="P_head">SHREE BENI BHOLA SECONDARY SCHOOL</p>
+                <p class="P_head">Godaita-8,Sarlahi,Nepal
+                    (Estd.2004, Computer Engineering.2073)
+                </p>
+            </div>
+        </div>
+
+        <!-- Start of Navbar -->
+        <nav class="navbar navbar-expand-lg div_navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Computer Engineering</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="teacherteam.html">Teacher Team</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Result</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Download</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+
+            <h4 class="h3_teacher_team"><i>Student Registration Form Details:</i></h4>
+     
+        <form action="saveForm.php" method="post" id="student_form">
+            <div class="form-group row">
+                <label for="first_name" class="col-md-3 col-form-label">Student Name:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Student Name">
+					<label style="color:red;font-weight:700;display:none" id="name_label">Student Name is required!</label>
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="first_name" class="col-md-3 col-form-label">Class For Admission:</label>
+                <div class="col-md-7">
+					<select class="form-control" id="class" name="class">
+						<option value="">Select Class</option>
+						<option value="one">one</option>
+						<option value="two">two</option>
+						<option value="three">three</option>
+						<option value="four">four</option>
+						<option value="five">five</option>
+						<option value="six">six</option>
+						<option value="seven">seven</option>
+						<option value="eight">eight</option>
+						<option value="nine">nine</option>
+						<option value="ten">ten</option>
+						<option value="eleven">eleven</option>
+						<option value="twelve">twelve</option>
+					 </select>
+					  <label style="color:red;font-weight:700;display:none" id="class_label">Select class for admission.</label>
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="first_name" class="col-md-3 col-form-label">Date of Birth (AD):</label>
+                <div class="col-md-7">
+                    <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter date of birth">
+					 <label style="color:red;font-weight:700;display:none" id="dob_label">Select DOB for conform date of birth .</label>
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="first_name" class="col-md-3 col-form-label">Gender:</label>
+				<label style="color:red;font-weight:700;display:none" id="gender_label">Select gender.</label>				
+                <div class="col-md-7">
+                   <div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="gender" id="boy" value="boy">
+						<label class="form-check-label" for="boy">Boy</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="gender" id="girl" value="boy">
+					  <label class="form-check-label" for="girl">Girl</label>
+					</div>
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="present" class="col-md-3 col-form-label">School in which presently studying:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="present_school" name="present_school" placeholder="Enter present school name">
+ 					 <label style="color:red;font-weight:700;display:none" id="school_label">Select your running school.</label>
+                </div>
+            </div>
+
+			<div class="form-group row">
+                <label for="present_class" class="col-md-3 col-form-label">Present Class:</label>
+                <div class="col-md-7">
+					<select class="form-control" id="present_class" name="present_class">
+						<option value="">Select Class</option>
+						<option value="one">one</option>
+						<option value="two">two</option>
+						<option value="three">three</option>
+						<option value="four">four</option>
+						<option value="five">five</option>
+						<option value="six">six</option>
+						<option value="seven">seven</option>
+						<option value="eight">eight</option>
+						<option value="nine">nine</option>
+						<option value="ten">ten</option>
+						<option value="eleven">eleven</option>
+						<option value="twelve">twelve</option>
+					 </select>
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="nationality" class="col-md-3 col-form-label">Nationality:</label>
+                <div class="col-md-7">
+					<select class="form-control" id="nationality" name="nationality">
+						<option value="">Select Nationality</option>
+						<option value="nepali">Nepali</option>
+						<option value="indian">Indian</option>
+					 </select>
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="village" class="col-md-3 col-form-label">Village/Tole:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="village" name="village" placeholder="Enter Village Name">
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="municipality" class="col-md-3 col-form-label">Municipality:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="municipality" name="municipality" placeholder="Enter Municipality Name">
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="word-no" class="col-md-3 col-form-label">Ward No:</label>
+                <div class="col-md-7">
+                    <input type="number" class="form-control" id="ward_number" name="ward_number" placeholder="Enter Ward Number">
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="city" class="col-md-3 col-form-label">City:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="city" name="city" placeholder="Enter City">
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="province" class="col-md-3 col-form-label">Province/State:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="province" name="province" placeholder="Enter Province Name">
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="country" class="col-md-3 col-form-label">Country:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="country" name="country" placeholder="Enter Country Name">
+                </div>
+            </div>
+			<div class="form-group row">
+                <label for="father" class="col-md-3 col-form-label">Father's Name:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="father_name" name="father_name" placeholder="Enter Father Name">
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="mother" class="col-md-3 col-form-label">Mother's Name:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="mother_name" name="mother_name" placeholder="Enter Mother Name">
+                </div>
+            </div>
+			
+			
+			<div class="form-group row">
+                <label for="father_occupation" class="col-md-3 col-form-label">Father's Occupation:</label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="father_occupation" name="father_occupation" placeholder="Enter Father Occupation">
+                </div>
+            </div>
+			
+			<div class="form-group row">
+                <label for="moblile_no" class="col-md-3 col-form-label">Mobile No:</label>
+                <div class="col-md-7">
+                    <input type="number" class="form-control" id="moblile_no" name="moblile_no" placeholder="Enter Mobile Number">
+                </div>
+            </div>
+			
+            <div class="form-group row">
+                <div class="offset-md-3 col-md-9">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    <div class="bg-footer">
+      <div class="container p-3 text-center">
+        <span class="font-weight-bold text-uppercase"> SHREE BENI BHOLA SECONDARY SCHOOL
+          Godaita-8,Sarlahi,Nepal (Estd.2004, Computer Engineering.2073) </span> <br>
+        <i class="fas fa-phone"></i> +977 (25) 523308,
+        <i class="fas fa-fax"></i> +977 (25) 525503,
+        <i class="fas fa-envelope"></i> benibhola@rediff.com,
+        <i class="fas fa-globe"></i> shreebenibhola.org <br>
+        <span class="font-weight-lighter"> © 2021 Beni Bhola model secondary School, Nepal All Rights Reserved.<p></p>
+        </span>
+      </div>
+    </div>
+
+  </div>
+	<script>
+	$('#student_form').on('submit',function(e){
+		//alert("hello hi");
+		var name = $('#name').val();
+		if(name.length < 1){
+			$('#name_label').css('display','block');
+		}
+		
+		var class_value = $('#class').val();
+		if(class_value.length < 1){
+			$('#class_label').css('display','block');
+		}
+		var dob_value = $('#dob').val();
+		if(dob_value.length < 1){
+			$('#dob_label').css('display','block');
+		}
+		var school_value = $('#school').val();
+		if(school_value.length < 1){
+			$('#school_label').css('display','block');
+		}		
+		return false;
+	});
+	</script>
+</body>
+</html>
